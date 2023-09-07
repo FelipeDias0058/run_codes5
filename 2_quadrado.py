@@ -1,8 +1,19 @@
+#Função para calcular a área e perímetro do quadrado
+def f_area(q):
+    area = q * q
+    return area
+
+def f_perimetro(q):
+    perimetro = q * 4
+    return perimetro
+
+#Valor do lado do quadrado
 q = float(input(""))
 
-area = q * q
-perimetro = q * 4
+#Chamada da função
+a = f_area(q)
+p = f_perimetro(q)
 
-
-print(f'{area:10.4f}')
-print(f'{perimetro:10.4f}')
+#Exibição dos valores obtidos
+print(f'{a:10.4f}')
+print(f'{p:10.4f}')
