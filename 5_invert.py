@@ -8,16 +8,21 @@ def f_invert(x):
 
     return f_invert(x[1:]) + x[0]
 
-#Entrada de Dados
-x = int(input(""))
-#Formata dados como string
-x_string = str(x)
 
-#Chamada da função
-invert = f_invert(x_string)
+def main():
+    #Entrada de Dados
+    x = int(input(""))
+    #Formata dados como string
+    x_string = str(x)
 
-#Condicional para que o número inserido
-#obedeça aos parâmetros requisitados
-if 1000 <= x <= 9999:
-    print(invert)
-else : print("Insira um número entre 1000 e 9999.")
+    #Chamada da função
+    invert = f_invert(x_string)
+
+    #Condicional para que o número inserido
+    #obedeça aos parâmetros requisitados
+    if 1000 <= x <= 9999:
+           print(invert)
+    else : print("Insira um número entre 1000 e 9999.")
+
+if __name__ == "__main__":
+    main()
